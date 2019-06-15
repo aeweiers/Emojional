@@ -17,17 +17,41 @@ class ViewController: UIViewController {
 
 
 
- let emojis = ["😑": "displeased", "😈": "evil genius", "🥺": "overwhelmed"]
+ let emojis = ["😑": "displeased", "😈": "an evil genius", "🥺": "overwhelmed"]
     
 @IBAction func showMessage( sender: UIButton) {
     
-    let selectedEmotion = sender.titleLabel?.text
+    _ = sender.titleLabel?.text
     
-    let alertController = UIAlertController (title: "Feelings are ok", message: "\(emojis.values)", preferredStyle: UIAlertController.Style.alert)
+    let alertController = UIAlertController (title: "if you're", message: emojis["😑"], preferredStyle: UIAlertController.Style.alert)
 
-    alertController.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+    alertController.addAction(UIAlertAction(title: "go for a run, bud!", style: UIAlertAction.Style.default, handler: nil))
 
     present(alertController, animated: true, completion: nil)
 }
 
+    @IBAction func showMessage2( sender: UIButton) {
+        
+        _ = sender.titleLabel?.text
+        
+        let alertController = UIAlertController (title: "if you're", message: emojis["😈"], preferredStyle: UIAlertController.Style.alert)
+        
+        alertController.addAction(UIAlertAction(title: "seek professional help", style: UIAlertAction.Style.default, handler: nil))
+        
+        present(alertController, animated: true, completion: nil)
+    
+}
+    
+    @IBAction func showMessage3( sender: UIButton) {
+        
+        _ = sender.titleLabel?.text
+        
+        let alertController = UIAlertController (title: "if you're", message: emojis["🥺"], preferredStyle: UIAlertController.Style.alert)
+        
+        alertController.addAction(UIAlertAction(title: "go home and cry", style: UIAlertAction.Style.default, handler: nil))
+        
+        present(alertController, animated: true, completion: nil)
+        
+    }
+    
 }
