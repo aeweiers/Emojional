@@ -17,12 +17,14 @@ class ViewController: UIViewController {
 
 
 
-
+ let emojis = ["😑": "displeased", "😈": "evil genius", "🥺": "overwhelmed"]
+    
 @IBAction func showMessage( sender: UIButton) {
     
-    let alertController = UIAlertController (title: "Hello", message: "Abbey", preferredStyle: UIAlertController.Style.alert)
-
+    let selectedEmotion = sender.titleLabel?.text
     
+    let alertController = UIAlertController (title: "Feelings are ok", message: "\(emojis.values)", preferredStyle: UIAlertController.Style.alert)
+
     alertController.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
 
     present(alertController, animated: true, completion: nil)
