@@ -19,39 +19,25 @@ class ViewController: UIViewController {
 
  let emojis = ["😑": "displeased", "😈": "an evil genius", "🥺": "overwhelmed"]
     
-@IBAction func showMessage( sender: UIButton) {
+   
     
-    _ = sender.titleLabel?.text
+let customMessages = ["displeased": ["go for a run", "talk through it", "stand up for yourself"], "evil genius" : ["seek professional help", "call pinky to take over the world!", "use your mind for good"], "overwhlemed" : ["go home and cry", "call your mom", "eat a tub of ice cream"] ]
     
-    let alertController = UIAlertController (title: "if you're", message: emojis["😑"], preferredStyle: UIAlertController.Style.alert)
+    
+@IBAction func showMessage(sender: UIButton) {
+    let selectedEmotion = sender.titleLabel?.text
+    let random = Int.random(in: 0 ..< 3)
+    let emojiMessage = customMessages[emojis[selectedEmotion!]!]?[random]
+   
+    
+    let alertController = UIAlertController (title: "if you're", message: emojiMessage, preferredStyle: UIAlertController.Style.alert)
 
-    alertController.addAction(UIAlertAction(title: "go for a run, bud!", style: UIAlertAction.Style.default, handler: nil))
+
+    
+    alertController.addAction(UIAlertAction(title: emojiMessage, style: UIAlertAction.Style.default, handler: nil))
 
     present(alertController, animated: true, completion: nil)
 }
 
-    @IBAction func showMessage2( sender: UIButton) {
-        
-        _ = sender.titleLabel?.text
-        
-        let alertController = UIAlertController (title: "if you're", message: emojis["😈"], preferredStyle: UIAlertController.Style.alert)
-        
-        alertController.addAction(UIAlertAction(title: "seek professional help", style: UIAlertAction.Style.default, handler: nil))
-        
-        present(alertController, animated: true, completion: nil)
-    
 }
-    
-    @IBAction func showMessage3( sender: UIButton) {
-        
-        _ = sender.titleLabel?.text
-        
-        let alertController = UIAlertController (title: "if you're", message: emojis["🥺"], preferredStyle: UIAlertController.Style.alert)
-        
-        alertController.addAction(UIAlertAction(title: "go home and cry", style: UIAlertAction.Style.default, handler: nil))
-        
-        present(alertController, animated: true, completion: nil)
-        
-    }
-    
-}
+

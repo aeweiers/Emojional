@@ -18,36 +18,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Feeling Some Type of Way?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zdg-wg-gz4">
-                                <rect key="frame" x="40" y="80" width="334" height="32.333333333333343"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Feeling Some Feelings?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zdg-wg-gz4">
+                                <rect key="frame" x="40" y="80" width="334" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1mx-f4-ofy">
-                                <rect key="frame" x="70" y="152.33333333333334" width="274" height="108.00000000000003"/>
+                                <rect key="frame" x="70" y="153" width="274" height="108"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="80"/>
                                 <state key="normal" title="😑"/>
                                 <connections>
-                                    <action selector="showMessageWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HLv-kg-4kq"/>
+                                    <action selector="showMessageWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KG9-mr-cWv"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FbH-GB-rhe">
-                                <rect key="frame" x="70" y="448.33333333333331" width="274" height="107.99999999999994"/>
+                                <rect key="frame" x="70" y="449" width="274" height="108"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="80"/>
                                 <state key="normal" title="🥺"/>
                                 <connections>
-                                    <action selector="showMessage3WithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cua-iZ-eJr"/>
-                                    <action selector="showMessageWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jAc-1r-XZQ"/>
+                                    <action selector="showMessageWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gdY-Ox-Nju"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w6d-B3-xxR">
-                                <rect key="frame" x="70" y="300.33333333333331" width="274" height="108"/>
+                                <rect key="frame" x="70" y="301" width="274" height="108"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="80"/>
                                 <state key="normal" title="😈"/>
                                 <connections>
-                                    <action selector="showMessage2WithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="I4d-jg-I6l"/>
-                                    <action selector="showMessageWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hRb-YV-X6X"/>
+                                    <action selector="showMessageWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xSj-cm-9Rf"/>
                                 </connections>
                             </button>
                         </subviews>
